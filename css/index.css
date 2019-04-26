@@ -66,15 +66,39 @@ p {
     line-height: 1.4;
 }
 
-.container {
+header {
     width: 800px;
     margin: 0 auto;
+}
+
+.nav-bar  {
+    width: 800px;
+    height: 80px;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    align-items: baseline;
+    padding: 20px 50px 10px 0px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 800px;
+    margin: 100px auto 0 auto;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -112,6 +136,46 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(1) {
+    background: teal;
+}  
+
+.middle-content .box:nth-child(2) {
+    background: gold;
+}  
+
+.middle-content .box:nth-child(3) {
+    background: cadetblue;
+}  
+
+.middle-content .box:nth-child(4) {
+    background: coral;
+}  
+
+.middle-content .box:nth-child(5) {
+    background: crimson;
+}  
+
+.middle-content .box:nth-child(6) {
+    background: forestgreen;
+}  
+
+.middle-content .box:nth-child(7) {
+    background: darkorchid;
+}  
+
+.middle-content .box:nth-child(8) {
+    background: hotpink;
+}  
+
+.middle-content .box:nth-child(9) {
+    background: indigo;
+}  
+
+.middle-content .box:nth-child(10) {
+    background: dodgerblue;
+}  
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +207,42 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about-top {
+    margin: 10px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-content .about-content-tile {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed black;
+    width: 49%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.about-content .about-content-tile img {
+    margin: 10px 0 15px 0;
+}
+
+.about-content .about-content-tile button {
+    display: block;
+    background: white;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 130px;
+    height: 38px;
+    margin: 10px 0;
+}
+
+.about-bottom {
+    margin: 30px 10px;
 }
