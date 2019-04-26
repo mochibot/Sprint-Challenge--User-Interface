@@ -225,7 +225,11 @@ footer nav a {
 }
 
 .about-top {
-    margin: 10px;
+    margin: 15px 10px 15px 10px;
+}
+
+hr {
+    border: 0.5px dashed black;
 }
 
 .about-content {
@@ -238,9 +242,9 @@ footer nav a {
     display: flex;
     flex-direction: column;
     border-bottom: 1px dashed black;
-    width: 49%;
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 47%;
+    margin: 10px 10px 35px 10px;
+    padding-bottom: 5px;
 }
 
 .about-content .about-content-tile img {
@@ -252,11 +256,15 @@ footer nav a {
     background: white;
     border: 1.5px solid black;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     width: 130px;
     height: 38px;
-    margin: 10px 0;
+    margin: 15px 0;
+}
+
+.about-content .about-content-tile button:focus {
+    outline: 0;
 }
 
 .about-content .about-content-tile button:active {
@@ -264,10 +272,10 @@ footer nav a {
 }
 
 .about-bottom {
-    margin: 30px 10px;
+    margin: 10px 10px 30px 10px;
 }
 
-@media screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
     .top-content {
         flex-direction: column;
     }
