@@ -89,6 +89,10 @@ header {
     color: black;
 }
 
+.nav-bar a:hover {
+    font-weight: 700;
+}
+
 .container {
     width: 800px;
     margin: 100px auto 0 auto;
@@ -135,6 +139,17 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+@keyframes spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+.middle-content .boxes .box:hover {
+    animation-name: spin;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}    
 
 .middle-content .boxes .box:nth-child(1) {
     background: teal;
@@ -236,6 +251,7 @@ footer nav a {
     display: block;
     background: white;
     border: 1.5px solid black;
+    cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
     width: 130px;
@@ -243,6 +259,21 @@ footer nav a {
     margin: 10px 0;
 }
 
+.about-content .about-content-tile button:active {
+    transform: translateY(4px);
+}
+
 .about-bottom {
     margin: 30px 10px;
 }
+
+@media screen and (max-width: 450px) {
+    .top-content {
+        flex-direction: column;
+    }
+    
+    .about-page .about-content {
+        flex-direction: column;
+    }
+    
+  }
