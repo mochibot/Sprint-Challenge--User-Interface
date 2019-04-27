@@ -224,6 +224,10 @@ footer nav a {
     text-decoration: none;
 }
 
+footer nav a:hover {
+    text-decoration: underline;
+}
+
 .about-top {
     margin: 15px 10px 15px 10px;
 }
@@ -247,8 +251,12 @@ hr {
     padding-bottom: 5px;
 }
 
-.about-content .about-content-tile img {
+.header-banner {
     margin: 10px 0 15px 0;
+}
+
+.about-content .about-content-tile img {
+    margin-bottom: 10px;
 }
 
 .about-content .about-content-tile button {
@@ -275,6 +283,52 @@ hr {
     margin: 10px 10px 30px 10px;
 }
 
+.products-top {
+    margin: 15px 10px 15px 10px;
+}
+
+.products-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products-content .products-content-tile {
+    width: 350px;
+    margin: 0 2px;
+}
+
+.products-content-tile img{
+    position: relative;
+    z-index: -2;
+}
+
+.products-content-tile .overlay {
+    background: black;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    opacity: 0;  
+    z-index: -1;
+    text-align: center;
+    color: white;
+    padding: 120px 30px;
+}
+
+.products-content-tile:hover .overlay{
+    opacity: 0.8;
+}
+
+.products-bottom {
+    margin: 20px 10px 20px 10px;
+}
+
+.credit {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
 @media only screen and (max-width: 450px) {
     .top-content {
         flex-direction: column;
@@ -285,3 +339,4 @@ hr {
     }
     
   }
+
